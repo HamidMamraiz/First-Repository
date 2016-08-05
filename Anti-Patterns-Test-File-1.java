@@ -19,7 +19,7 @@ public class GenericListVersion2 implements Iterable{
     // may have extra capacity
     private Object[] iValues;
     private int iSize;
-    
+    private int deadcode;
     private class GenericListIterator implements Iterator{
         private int position;
         private boolean removeOK;
