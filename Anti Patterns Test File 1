@@ -40,6 +40,9 @@ public class GenericListVersion2 implements Iterable{
             return result;
         }
         
+        public boolean hasNext(){
+            return position < iSize;
+        }
         public void remove(){
             if( !removeOK )
                 throw new IllegalStateException();
